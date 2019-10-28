@@ -5,9 +5,9 @@
 функции my_func(x, y). При решении задания необходимо
 обойтись без встроенной функции возведения числа в степень.
 '''
-def my_func (*args):
-    x = input("Input x")
-    y = int(input("Input y"))
+def my_func(*args):
+    x = float(input("Input x "))
+    y = int(input("Input negative y "))
     return x ** y
 
 print(my_func())
