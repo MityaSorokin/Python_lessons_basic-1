@@ -198,11 +198,8 @@ class PoliceCar(Car):
             return f'{self.name} is not from police department'
 
 
-# audi = Car(100, 'Red', 'Audi', False)
 audi = SportCar(100, 'Red', 'Audi', False)
-# oka = Car(70, 'White', 'Oka', False)
 oka = TownCar(30, 'White', 'Oka', False)
-# lada = Car(70, 'Rose', 'Lada', True)
 lada = WorkCar(70, 'Rose', 'Lada', True)
 ford = PoliceCar(110, 'Blue',  'Ford', True)
 print(lada.turn_left())
@@ -214,6 +211,7 @@ print(f'Is {lada.name}  a police car? {lada.is_police}')
 print(audi.show_speed())
 print(oka.show_speed())
 print(ford.police())
+print(ford.show_speed())
 
 '''
 # ------------------------------------5-----------------------------
