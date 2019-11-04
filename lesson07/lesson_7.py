@@ -177,7 +177,9 @@ class Cell:
         else:
             return f'Операция вычитания невозможна'""
         '''
-        return Cell(int(self.quantity - other.quantity))
+        return self.quantity - other.quantity if (self.quantity - other.quantity) > 0 else print('Отрицательно!')
+
+        # return Cell(int(self.quantity - other.quantity))
 
     def __mul__(self, other):
         #self.result = Cell(int(self.quantity * other.quantity))
